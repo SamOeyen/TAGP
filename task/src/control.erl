@@ -11,6 +11,8 @@ main() ->
 	HE_1 = {heat_exchanger_1, flow_meter, 10},
 	HE_2 = {heat_exchanger_2, flow_meter, 1},
 
+	erlang:display(overview_pid),
+	erlang:display(GlobalOverview_Pid),
 	erlang:display(pid_list),
 	erlang:display(get_overview(GlobalOverview_Pid)),
 	erlang:display(circuit),
